@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Order;
 
 class Payment extends Model
 {
@@ -12,5 +13,9 @@ class Payment extends Model
 
     protected $table = 'payments';
 
-    protected $fillable = [ 'order_id', 'payment_method', 'amount', 'status' ];
+    protected $fillable = [ 'order_id', 'payment_method', 'amount','status'];
+
+    public function order (){
+        return $this->belongsTo(Order::class);
+    }
 }
