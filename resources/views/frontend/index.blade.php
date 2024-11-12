@@ -58,8 +58,8 @@
 									<i class="fa fa-angle-down medium text-muted"></i>
 								</a>
 								<ul class="dropdown-menu popup-content link">
-									<li class="current"><a href="javascript:void(0);" class="dropdown-item medium text-muted"><img src="assets/img/1.jpg" alt="en" width="16" height="11" /><span>English</span></a></li>
-									<li><a href="javascript:void(0);" class="dropdown-item medium text-muted"><img src="assets/img/2.jpg" alt="fr" width="16" height="11" /><span>Français</span></a></li>
+									<li class="current"><a href="javascript:void(0);" class="dropdown-item medium text-muted"><img src="{{ asset('frontend/img/1.jpg') }}" alt="en" width="16" height="11" /><span>English</span></a></li>
+									<li><a href="javascript:void(0);" class="dropdown-item medium text-muted"><img src="{{ asset('frontend/img/2.jpg') }}" alt="fr" width="16" height="11" /><span>Français</span></a></li>
 								</ul>
 							</div>
 
